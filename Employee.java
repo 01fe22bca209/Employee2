@@ -14,10 +14,14 @@ public class Employee {
         System.out.println("Employee ID: " + employeeId);
         System.out.println("Salary: $" + salary);
     }
+    public double getSalary() {
+        return salary;
+    }
     public static void main(String[] args) {
         // Creating an instance of Employee
         Employee employee = new Employee("Keerthi", 1001, 50000);
         System.out.println("Employee Details:");
         employee.displayDetails();
+        
     }
 }
